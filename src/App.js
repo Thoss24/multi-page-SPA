@@ -3,6 +3,7 @@ import Home from "./routes/Home";
 import Products from "./routes/Products";
 import Root from "./routes/Root";
 import Error from "./routes/Error";
+import ProductDetails from "./routes/ProductDetails";
 import classes from './App.css';
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         path: "/products",
         element: <Products />,
       },
+      {
+        path: "/products/:id",
+        element: <ProductDetails />
+      }
     ],
   },
 ]);
